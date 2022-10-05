@@ -79,8 +79,268 @@ for (let i=0; i<favVehicles.length; i++)
 }
 
 //Q16
+let dinner_16 = ['Iqra', 'Imad', 'Osama', 'Waleed'];
+for (let i = 0; i < dinner_16.length; i++) {
+    console.log("Hello " + dinner_16[i] + ". I would like to invite you for dinner.");
+}
+console.log("I found a bigger dinner table");
+dinner_16.splice(0, 0, "Hamza");
+dinner_16.splice(3, 0, "Ali");
+dinner_16.push("Shahbaz");
+for (let i = 0; i < dinner_16.length; i++) {
+    console.log("Hello " + dinner_16[i] + ". Now, I would like to invite you for dinner.");
+}
 
 
+// Question # 17
+let dinner_17 = ['Iqra', 'Imad', 'Osama', 'Waleed'];
+dinner_17.splice(0, 0, "Hamza");
+dinner_17.splice(3, 0, "Ali");
+dinner_17.push("Shahbaz");
+console.log("I can invite only two people for dinner");
+for (let i = dinner_17.length; i > 2; i--) {
+    let dinner_17_i = dinner_17.splice(-1, 1)[0];
+    console.log("Dear " + dinner_17_i + " I am sorry. I can’t invite you to dinner");
+}
+for (let i = 0; i < dinner_17.length; i++) {
+    console.log(dinner_17[i] + ", you are invited!");
+}
+dinner_17.length = 0;
+console.log(dinner_17);
+
+
+// Question # 18
+let cities_18 = ["Karachi", "Lahore", "Islamabad", "Dubai", "Toronto"];
+console.log("Sorted: " + cities_18.slice().sort());
+console.log("Unsorted: " + cities_18);
+console.log("Reverse Sorted: " + cities_18.slice().sort().reverse());
+console.log("Unsorted: " + cities_18);
+
+
+// Question # 19
+let dinner_19 = ['Iqra', 'Imad', 'Osama', 'Waleed'];
+console.log("I am inviting " + dinner_19.length + " peoples to dinner");
+
+
+// Question # 20
+let car_20 = ['Bugatti', 'Ferrari', 'Mercedes', 'Lamborgini'];
+console.log(car_20);
+
+
+// Question # 21
+var student_21 = {
+    "name": "Syed Muhammad Mooazam",
+    "department": "Information Technology",
+    "education": "Bachelors in Electrical Engineering"
+};
+console.log(student_21.name);
+console.log(student_21.department);
+console.log(student_21.education);
+
+
+// Question # 22
+let car_22 = ['Bugatti', 'Ferrari', 'Mercedes', 'Lamborgini'];
+console.log(car_22[4]);
+
+
+// Question # 23
+let name_23 = "Mooazam";
+let course_23 = "web3";
+if (name_23 == "Mooazam" && course_23 == "web3") {
+    console.log("Name is True and Course is True");
+}
+else if (name_23 == "Mooazam" && course_23 != "web3") {
+    console.log("Only Name is True and Course is False");
+}
+else if (name_23 != "Mooazam" && course_23 == "web3") {
+    console.log("Only Course is True and Name is False");
+}
+else {
+    console.log("False");
+}
+
+
+// Question # 24
+let name_24 = "Mooazam";
+if (name_24 === "Mooazam") {
+    console.log("Name is True and Case is True");
+}
+else if (name_24 == "mooazam") {
+    console.log("Name is True");
+}
+else {
+    console.log("False");
+}
+
+
+// Question # 25
+let alien_color_25 = "black";
+
+if (alien_color_25 == "black") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_25 != "black") {
+    console.log("");
+}
+
+if (alien_color_25 == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_25 != "green") {
+    console.log("");
+}
+
+
+// Question # 26
+let alien_color_26 = "green";
+
+if (alien_color_26 == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_26 != "green") {
+    console.log("Player earned 10 points");
+}
+
+if (alien_color_26 == "black") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_26 != "black") {
+    console.log("");
+}
+
+
+// Question # 27
+var alien_color_27 = "green";
+if (alien_color_27 == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_27 == "yellow") {
+    console.log("Player earned 10 points");
+}
+else if (alien_color_27 == "red") {
+    console.log("Player earned 15 points");
+}
+
+var alien_color_27 = "yellow";
+if (alien_color_27 == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_27 == "yellow") {
+    console.log("Player earned 10 points");
+}
+else if (alien_color_27 == "red") {
+    console.log("Player earned 15 points");
+}
+
+var alien_color_27 = "red";
+if (alien_color_27 == "green") {
+    console.log("Player earned 5 points");
+}
+else if (alien_color_27 == "yellow") {
+    console.log("Player earned 10 points");
+}
+else if (alien_color_27 == "red") {
+    console.log("Player earned 15 points");
+}
+
+
+// // Question # 28
+var age_28 = 22;
+if (age_28 < 2 && age_28 >= 0) {
+    console.log("You are a baby");
+}
+else if (age_28 < 4 && age_28 >= 2) {
+    console.log("You are a toddler");
+}
+else if (age_28 < 13 && age_28 >= 4) {
+    console.log("You are a kid");
+}
+else if (age_28 < 20 && age_28 >= 23) {
+    console.log("You are a teenager");
+}
+else if (age_28 < 65 && age_28 >= 20) {
+    console.log("You are an adult");
+}
+else if (age_28 >= 65) {
+    console.log("You are an elder");
+}
+
+
+// Question # 29
+var fruits_29 = ["mango", "apple", "banana", "guava", "pineapple"];
+if (fruits_29.includes("mango")) {
+    console.log("Mango is in the array");
+}
+else {
+    console.log("Mango is not in the array");
+}
+
+var favourite_fruits_29 = ["mango", "apple", "banana"];
+if (favourite_fruits_29.includes("mango")) {
+    console.log("Mango is your favourite fruit");
+}
+if (favourite_fruits_29.includes("apple")) {
+    console.log("Apple is your favourite fruit");
+}
+if (favourite_fruits_29.includes("banana")) {
+    console.log("Banana is your favourite fruit");
+}
+if (favourite_fruits_29.includes("guava")) {
+    console.log("Guava is your favourite fruit");
+}
+if (favourite_fruits_29.includes("pineapple")) {
+    console.log("Pineapple is your favourite fruit");
+}
+
+
+// Question # 30
+var usernames_30 = ["admin", "mooazam", "iqra", "imad"];
+for (let i = 0; i < usernames_30.length; i++) {
+    if (usernames_30[i] == "admin") {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log("Hello " + usernames_30[i] + ", thank you logging in again");
+    }
+}
+
+
+// Question # 31
+var usernames_31 = [];
+if (usernames_31.length == 0) {
+    console.log("We need to find some users!");
+}
+
+
+// Question # 32
+var current_users_32 = ["mooazam", "iqra", "imad", "shayan", "ali"];
+var new_users_32 = ["zain", "mooazam", "usman", "saad"];
+for (let i = 0; i < new_users_32.length; i++) {
+    if (current_users_32.includes(new_users_32[i])) {
+        console.log(new_users_32[i] + " Username already exist, try another name!");
+    }
+    else {
+        console.log(new_users_32[i] + " Username is available!");
+    }
+}
+
+
+// Question # 33
+var num_33 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let i = 0; i < num_33.length; i++) {
+    if (num_33[i] == 1) {
+        console.log("1st");
+    }
+    else if (num_33[i] == 2) {
+        console.log("2nd");
+    }
+    else if (num_33[i] == 3) {
+        console.log("3rd");
+    }
+    else if (num_33[i] != 1 && num_33[i] != 2 && num_33[i] != 3) {
+        console.log(num_33[i] + "th");
+    }
+}
 
 //Q34
 let pizzas = ['fajita', 'pepperoni', 'chicken tikka']
