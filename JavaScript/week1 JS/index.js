@@ -129,9 +129,9 @@ console.log(car_20);
 
 // Question # 21
 var student_21 = {
-    "name": "Syed Muhammad Mooazam",
+    "name": "Iqra Naz",
     "department": "Information Technology",
-    "education": "Bachelors in Electrical Engineering"
+    "education": "Bachelors in Software Engineering"
 };
 console.log(student_21.name);
 console.log(student_21.department);
@@ -144,15 +144,15 @@ console.log(car_22[4]);
 
 
 // Question # 23
-let name_23 = "Mooazam";
+let name_23 = "Iqra";
 let course_23 = "web3";
-if (name_23 == "Mooazam" && course_23 == "web3") {
+if (name_23 == "Iqra" && course_23 == "web3") {
     console.log("Name is True and Course is True");
 }
-else if (name_23 == "Mooazam" && course_23 != "web3") {
+else if (name_23 == "Iqra" && course_23 != "web3") {
     console.log("Only Name is True and Course is False");
 }
-else if (name_23 != "Mooazam" && course_23 == "web3") {
+else if (name_23 != "Iqra" && course_23 == "web3") {
     console.log("Only Course is True and Name is False");
 }
 else {
@@ -161,11 +161,11 @@ else {
 
 
 // Question # 24
-let name_24 = "Mooazam";
-if (name_24 === "Mooazam") {
+let name_24 = "Iqra";
+if (name_24 === "Iqra") {
     console.log("Name is True and Case is True");
 }
-else if (name_24 == "mooazam") {
+else if (name_24 == "iqra") {
     console.log("Name is True");
 }
 else {
