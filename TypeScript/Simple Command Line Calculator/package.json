@@ -1,0 +1,16 @@
+{
+    "name": "forex",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+      "forex": "./index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.18.0",
+      "inquirer": "^6.2.1"
+    }
+  }
